@@ -1,0 +1,19 @@
+2026-01-21T15:44:13.057904616Z [INFO][NSSF][Main] NSSF version:
+        free5GC version: v4.1.0
+        build time:      2025-10-04T06:09:28Z
+        commit hash:     4555db4a
+        commit time:     2025-08-15T11:43:26Z
+        go version:      go1.24.5 linux/amd64
+2026-01-21T15:44:13.062460511Z [INFO][NSSF][CFG] Read config from [./config/nssfcfg.yaml]
+2026-01-21T15:44:13.076481191Z [INFO][NSSF][Main] Log enable is set to [true]
+2026-01-21T15:44:13.076513383Z [INFO][NSSF][Main] Log level is set to [info]
+2026-01-21T15:44:13.076519915Z [INFO][NSSF][Main] Report Caller is set to [false]
+2026-01-21T15:44:13.701374308Z [INFO][NSSF][Main] OAuth2 setting receive from NRF: true
+2026-01-21T15:44:13.701428631Z [INFO][NSSF][Main] register to NRF successfully
+2026-01-21T15:44:13.701445273Z [INFO][NSSF][SBI] Starting server...
+2026-01-21T15:44:53.171839451Z [INFO][NSSF][NsSel] Handle NSSelectionGet
+2026-01-21T15:44:53.172273157Z [WARN][NSSF][Util] No TA {"plmnId":{"mcc":"208","mnc":"93"},"tac":"000001"} in NSSF configuration
+2026-01-21T15:44:53.172950747Z [INFO][NSSF][GIN] | 200 |   10.100.200.16 | GET     | /nnssf-nsselection/v2/network-slice-information?nf-id=3f965bdf-17d6-49a0-a863-bd6524fa5660&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D&tai=%7B%22plmnId%22%3A%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D%2C%22tac%22%3A%22000001%22%7D |  |
+2026-01-21T15:44:53.803117784Z [INFO][NSSF][NsSel] Handle NSSelectionGet
+2026-01-21T15:44:53.806966626Z [WARN][NSSF][Util] No TA {"plmnId":{"mcc":"208","mnc":"93"},"tac":"000001"} in NSSF configuration
+2026-01-21T15:44:53.807260235Z [INFO][NSSF][GIN] | 200 |   10.100.200.16 | GET     | /nnssf-nsselection/v2/network-slice-information?nf-id=3f965bdf-17d6-49a0-a863-bd6524fa5660&nf-type=AMF&slice-info-request-for-pdu-session=%7B%22sNssai%22%3A%7B%22sst%22%3A1%2C%22sd%22%3A%22112233%22%7D%2C%22roamingIndication%22%3A%22NON_ROAMING%22%7D&tai=%7B%22plmnId%22%3A%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D%2C%22tac%22%3A%22000001%22%7D |  |

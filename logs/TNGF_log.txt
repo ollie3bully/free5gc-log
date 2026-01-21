@@ -1,0 +1,12 @@
+2026-01-21T15:44:14.104529641Z [INFO][TNGF][Main] TNGF version:
+        free5GC version: v4.1.0
+        build time:      2025-10-04T06:20:00Z
+        commit hash:     20b04402
+        commit time:     2025-08-11T08:04:32Z
+        go version:      go1.24.5 linux/amd64
+2026-01-21T15:44:14.110213617Z [INFO][TNGF][CFG] Read config from [./config/tngfcfg.yaml]
+2026-01-21T15:44:14.117178139Z [WARN][TNGF][Context] Parse PKCS8 private key failed: x509: failed to parse private key (use ParsePKCS1PrivateKey instead for this key format)
+2026-01-21T15:44:14.123564334Z [INFO][TNGF][Context] Parse using PKCS1...
+2026-01-21T15:44:14.165570893Z [ERRO][TNGF][Context] cannot find interface name
+2026-01-21T15:44:14.165607082Z [ERRO][TNGF][Init] Initiating context failed
+2026-01-21T15:44:14.165622381Z [ERRO][TNGF][Main] TNGF Run Error: initiating context failed

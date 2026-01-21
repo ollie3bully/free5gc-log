@@ -1,0 +1,21 @@
+2026-01-21T15:44:14.719502823Z [INFO][N3IWF][Main] N3IWF version:
+        free5GC version: v4.1.0
+        build time:      2025-10-04T06:17:28Z
+        commit hash:     74a585d1
+        commit time:     2025-08-14T10:27:20Z
+        go version:      go1.24.5 linux/amd64
+2026-01-21T15:44:14.725433326Z [INFO][N3IWF][CFG] Read config from [./config/n3iwfcfg.yaml]
+2026-01-21T15:44:14.727558492Z [INFO][N3IWF][Main] Log enable is set to [true]
+2026-01-21T15:44:14.727682288Z [INFO][N3IWF][Main] Log level is set to [info]
+2026-01-21T15:44:14.727792528Z [INFO][N3IWF][Main] Report Caller is set to [false]
+2026-01-21T15:44:14.728338608Z [WARN][N3IWF][CTX] Parse PKCS8 private key failed: x509: failed to parse private key (use ParsePKCS1PrivateKey instead for this key format)
+2026-01-21T15:44:14.728467353Z [INFO][N3IWF][CTX] Parse using PKCS1...
+2026-01-21T15:44:14.739925928Z [WARN][N3IWF][Main] netlink.RouteAdd: file exists
+2026-01-21T15:44:14.739952429Z [INFO][N3IWF][Main] Setup XFRM interface xfrmi-default
+2026-01-21T15:44:14.760942467Z [INFO][N3IWF][NGAP] Send NG Setup Request
+2026-01-21T15:44:14.764638488Z [INFO][N3IWF][Main] NGAP service running.
+2026-01-21T15:44:14.766248520Z [INFO][N3IWF][NGAP] Handle NG Setup Response
+2026-01-21T15:44:14.767349236Z [INFO][N3IWF][Main] NAS TCP server successfully started.
+2026-01-21T15:44:14.768671807Z [INFO][N3IWF][Main] Listening NWu user plane traffic
+2026-01-21T15:44:14.776117626Z [INFO][N3IWF][Main] IKE service running
+2026-01-21T15:44:14.776202798Z [INFO][N3IWF][Main] N3IWF started

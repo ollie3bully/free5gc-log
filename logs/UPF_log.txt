@@ -1,0 +1,76 @@
+2026-01-21T15:44:09.032706679Z [INFO][UPF][Main] UPF version:
+        free5GC version: v4.1.0
+        build time:      2025-10-04T06:17:38Z
+        commit hash:     9740983c
+        commit time:     2025-07-18T14:47:46Z
+        go version:      go1.24.5 linux/amd64
+2026-01-21T15:44:09.040914317Z [INFO][UPF][CFG] Read config from [./config/upfcfg.yaml]
+2026-01-21T15:44:09.050818767Z [INFO][UPF][CFG] ==================================================
+2026-01-21T15:44:09.051002026Z [INFO][UPF][CFG] (*factory.Config)(0xc000330000)({
+        Version: (string) (len=5) "1.0.3",
+        Description: (string) (len=31) "UPF initial local configuration",
+        Pfcp: (*factory.Pfcp)(0xc000012300)({
+                Addr: (string) (len=15) "upf.free5gc.org",
+                NodeID: (string) (len=15) "upf.free5gc.org",
+                RetransTimeout: (time.Duration) 1s,
+                MaxRetrans: (uint8) 3
+        }),
+        Gtpu: (*factory.Gtpu)(0xc0000123f0)({
+                Forwarder: (string) (len=5) "gtp5g",
+                IfList: ([]factory.IfInfo) (len=1 cap=1) {
+                        (factory.IfInfo) {
+                                Addr: (string) (len=15) "upf.free5gc.org",
+                                Type: (string) (len=2) "N3",
+                                Name: (string) "",
+                                IfName: (string) "",
+                                MTU: (uint32) 0
+                        }
+                }
+        }),
+        DnnList: ([]factory.DnnList) (len=2 cap=2) {
+                (factory.DnnList) {
+                        Dnn: (string) (len=8) "internet",
+                        Cidr: (string) (len=12) "10.60.0.0/16",
+                        NatIfName: (string) ""
+                },
+                (factory.DnnList) {
+                        Dnn: (string) (len=8) "internet",
+                        Cidr: (string) (len=12) "10.61.0.0/16",
+                        NatIfName: (string) ""
+                }
+        },
+        Logger: (*factory.Logger)(0xc000028720)({
+                Enable: (bool) true,
+                Level: (string) (len=4) "info",
+                ReportCaller: (bool) false
+        })
+})
+2026-01-21T15:44:09.051184583Z [INFO][UPF][CFG] ==================================================
+2026-01-21T15:44:09.051231533Z [INFO][UPF][Main] Log level is set to [info]
+2026-01-21T15:44:09.051269044Z [INFO][UPF][Main] Report Caller is set to [false]
+2026-01-21T15:44:09.051347744Z [INFO][UPF][Main] starting Gtpu Forwarder [gtp5g]
+2026-01-21T15:44:09.051449768Z [INFO][UPF][Main] GTP Address: "upf.free5gc.org:2152"
+2026-01-21T15:44:09.149136471Z [INFO][UPF][BUFF] buff netlink server started
+2026-01-21T15:44:09.149476038Z [INFO][UPF][Gtp5g] Forwarder started
+2026-01-21T15:44:09.150846167Z [INFO][UPF][Perio] perio server started
+2026-01-21T15:44:09.153714548Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805] starting pfcp server
+2026-01-21T15:44:09.153910762Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805] pfcp server started
+2026-01-21T15:44:09.153929007Z [INFO][UPF][Main] UPF started
+2026-01-21T15:44:15.107363790Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805] handleAssociationSetupRequest
+2026-01-21T15:44:15.111602087Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805][CPNodeID:smf.free5gc.org] New node
+2026-01-21T15:44:53.714432027Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805] handleSessionEstablishmentRequest
+2026-01-21T15:44:53.715278118Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805][CPNodeID:smf.free5gc.org][CPSEID:0x1][UPSEID:0x1] New session
+2026-01-21T15:44:53.731929865Z [INFO][UPF][Perio] recv event[TYPE_PERIO_ADD][{eType:1 lSeid:1 urrid:1 period:10000000000}]
+2026-01-21T15:44:53.734512583Z [INFO][UPF][Perio] new ticker [10s]
+2026-01-21T15:44:53.734620478Z [INFO][UPF][Perio] recv event[TYPE_PERIO_ADD][{eType:1 lSeid:1 urrid:2 period:10000000000}]
+2026-01-21T15:44:54.322174797Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805] handleSessionEstablishmentRequest
+2026-01-21T15:44:54.322448007Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805][CPNodeID:smf.free5gc.org][CPSEID:0x2][UPSEID:0x2] New session
+2026-01-21T15:44:54.324152713Z [INFO][UPF][Perio] recv event[TYPE_PERIO_ADD][{eType:1 lSeid:2 urrid:1 period:10000000000}]
+2026-01-21T15:44:54.324293451Z [INFO][UPF][Perio] recv event[TYPE_PERIO_ADD][{eType:1 lSeid:2 urrid:2 period:10000000000}]
+2026-01-21T15:44:54.354419004Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805] handleSessionModificationRequest
+2026-01-21T15:44:54.445151743Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805] handleSessionModificationRequest
+2026-01-21T15:45:03.739865603Z [INFO][UPF][Perio] recv event[TYPE_PERIO_TIMEOUT][{eType:3 lSeid:0 urrid:0 period:10000000000}]
+2026-01-21T15:45:03.743915405Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805] serveUSAReport
+2026-01-21T15:45:03.745374475Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805] serveUSAReport
+2026-01-21T15:45:03.750167563Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805] handleSessionReportResponse
+2026-01-21T15:45:03.750303822Z [INFO][UPF][PFCP][LAddr:upf.free5gc.org:8805] handleSessionReportResponse

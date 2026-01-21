@@ -1,0 +1,27 @@
+2026-01-21T15:44:10.858218267Z [INFO][AUSF][Main] AUSF version:
+        free5GC version: v4.1.0
+        build time:      2025-10-04T06:01:22Z
+        commit hash:     34c42066
+        commit time:     2025-08-04T08:42:28Z
+        go version:      go1.24.5 linux/amd64
+2026-01-21T15:44:10.877904913Z [INFO][AUSF][CFG] Read config from [./config/ausfcfg.yaml]
+2026-01-21T15:44:10.885688604Z [INFO][AUSF][Main] Log enable is set to [true]
+2026-01-21T15:44:10.885732037Z [INFO][AUSF][Main] Log level is set to [info]
+2026-01-21T15:44:10.885745122Z [INFO][AUSF][Main] Report Caller is set to [false]
+2026-01-21T15:44:10.885776983Z [INFO][AUSF][Init] ausfconfig Info: Version[1.0.3] Description[AUSF initial local configuration]
+2026-01-21T15:44:10.906180909Z [INFO][AUSF][SBI] Binding addr: [ausf.free5gc.org:8000]
+2026-01-21T15:44:10.906252756Z [INFO][AUSF][Init] Server started
+ausf context =  &{{{} {{{} 0} {0 0} {[] {} <nil>} <nil> <nil> 0}} {{} {{{} 0} {0 0} {[] {} <nil>} <nil> <nil> 0}} 65923c6b-4950-4a83-a929-774261a994dd ausfGroup001 8000 ausf.free5gc.org ausf.free5gc.org http://ausf.free5gc.org:8000 http http://nrf.free5gc.org:8000 cert/nrf.pem map[nausf-auth:{65923c6b-4950-4a83-a929-774261a994dd nausf-auth [{v1 1.0.3 <nil>}] http REGISTERED   [{ausf.free5gc.org   8000}]  [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>}] [{208 93} {123 45}]  0xc0006cb860 false false}
+2026-01-21T15:44:14.304430766Z [INFO][AUSF][Main] OAuth2 setting receive from NRF: true
+2026-01-21T15:44:14.304901993Z [INFO][AUSF][SBI] Start SBI server (listen on ausf.free5gc.org:8000)
+2026-01-21T15:44:52.028580611Z [INFO][AUSF][UeAuth] HandleUeAuthPostRequest
+2026-01-21T15:44:52.028610387Z [INFO][AUSF][UeAuth] Serving network authorized
+2026-01-21T15:44:52.184974117Z [INFO][AUSF][UeAuth] Add SuciSupiPair (suci-0-208-93-0000-0-0-0000000001, imsi-208930000000001) to map.
+2026-01-21T15:44:52.185466093Z [INFO][AUSF][UeAuth] Use 5G AKA auth method
+2026-01-21T15:44:52.186209810Z [INFO][AUSF][5gAka] XresStar = 3537363133333565653661636230336565643637316538643538356230376632
+2026-01-21T15:44:52.186500132Z [INFO][AUSF][GIN] | 201 |   10.100.200.16 | POST    | /nausf-auth/v1/ue-authentications |  |
+2026-01-21T15:44:52.229322813Z [INFO][AUSF][5gAka] Auth5gAkaComfirmRequest
+2026-01-21T15:44:52.229357379Z [INFO][AUSF][5gAka] res*: 3537363133333565653661636230336565643637316538643538356230376632
+Xres*: 3537363133333565653661636230336565643637316538643538356230376632
+2026-01-21T15:44:52.229369472Z [INFO][AUSF][5gAka] 5G AKA confirmation succeeded
+2026-01-21T15:44:52.287382747Z [INFO][AUSF][GIN] | 200 |   10.100.200.16 | PUT     | /nausf-auth/v1/ue-authentications/suci-0-208-93-0000-0-0-0000000001/5g-aka-confirmation |  |

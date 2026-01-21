@@ -1,0 +1,34 @@
+2026-01-21T15:44:13.552412681Z [INFO][CHF][Main] CHF version:
+        free5GC version: v4.1.0
+        build time:      2025-10-04T06:19:28Z
+        commit hash:     4056b6f2
+        commit time:     2025-08-14T10:21:46Z
+        go version:      go1.24.5 linux/amd64
+2026-01-21T15:44:13.556054558Z [INFO][CHF][CFG] Read config from [./config/chfcfg.yaml]
+2026-01-21T15:44:13.558126453Z [INFO][CHF][Main] Log enable is set to [true]
+2026-01-21T15:44:13.558145449Z [INFO][CHF][Main] Log level is set to [info]
+2026-01-21T15:44:13.558152983Z [INFO][CHF][Main] Report Caller is set to [false]
+2026-01-21T15:44:13.558164706Z [INFO][CHF][Init] chfconfig Info: Version[1.0.3] Description[CHF initial local configuration]
+2026-01-21T15:44:13.558265347Z [INFO][CHF][SBI] Binding addr: [chf.free5gc.org:8000]
+2026-01-21T15:44:13.558406196Z [INFO][CHF][Init] Server started
+2026-01-21T15:44:13.570944615Z [INFO][CHF][CGF] FTP server Start
+2026-01-21T15:44:13.576819739Z [INFO][CHF][Acct] Open Account Balance Management Server
+2026-01-21T15:44:13.609122969Z [WARN][CHF][CGF] Login to Webconsole FTP fail: dial tcp 10.100.200.6:2121: connect: connection refused, retrying [1]
+2026-01-21T15:44:14.319807315Z [INFO][CHF][Main] OAuth2 setting receive from NRF: true
+2026-01-21T15:44:14.319853072Z [INFO][CHF][SBI] Start SBI server (listen on chf.free5gc.org:8000)
+2026-01-21T15:44:14.618115922Z [WARN][CHF][CGF] Login to Webconsole FTP fail: dial tcp 10.100.200.6:2121: connect: connection refused, retrying [2]
+2026-01-21T15:44:15.628168411Z [INFO][CHF][CGF] Login FTP server succeed
+2026-01-21T15:44:15.629448562Z [INFO][address:10.100.200.13:2122][category:FTP][component:CHF] Listening...
+2026-01-21T15:44:15.629874162Z [INFO][category:FTP][component:CHF] Starting...
+2026-01-21T15:44:53.634483954Z [INFO][CHF][ChargingPost] HandleChargingdataInitial
+2026-01-21T15:44:53.634973796Z [INFO][CHF][ChargingPost] SMF charging event
+2026-01-21T15:44:53.635733504Z [ERRO][CHF][ChargingPost] Charging gateway fail to send CDR to billing domain open /tmp/imsi-208930000000001.cdr: no such file or directory
+2026-01-21T15:44:53.635756117Z [INFO][CHF][ChargingPost] Open CDR for UE imsi-208930000000001
+2026-01-21T15:44:53.635770354Z [INFO][CHF][ChargingPost] NewChfUe imsi-208930000000001
+2026-01-21T15:44:53.636172389Z [INFO][CHF][GIN] | 201 |    10.100.200.7 | POST    | /nchf-convergedcharging/v3/chargingdata |  |
+2026-01-21T15:44:54.258491996Z [INFO][CHF][ChargingPost] HandleChargingdataInitial
+2026-01-21T15:44:54.258533165Z [INFO][CHF][ChargingPost] SMF charging event
+2026-01-21T15:44:54.259332527Z [ERRO][CHF][ChargingPost] Charging gateway fail to send CDR to billing domain open /tmp/imsi-208930000000001.cdr: no such file or directory
+2026-01-21T15:44:54.259457174Z [INFO][CHF][ChargingPost] Open CDR for UE imsi-208930000000001
+2026-01-21T15:44:54.259474517Z [INFO][CHF][ChargingPost] NewChfUe imsi-208930000000001
+2026-01-21T15:44:54.259520535Z [INFO][CHF][GIN] | 201 |    10.100.200.7 | POST    | /nchf-convergedcharging/v3/chargingdata |  |

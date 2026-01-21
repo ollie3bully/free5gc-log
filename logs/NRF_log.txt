@@ -1,0 +1,74 @@
+2026-01-21T15:44:09.705979918Z [INFO][NRF][Main] NRF version:
+        free5GC version: v4.1.0
+        build time:      2025-10-04T06:09:28Z
+        commit hash:     cc1ce6e6
+        commit time:     2025-08-05T09:57:51Z
+        go version:      go1.24.5 linux/amd64
+2026-01-21T15:44:09.716930730Z [INFO][NRF][CFG] Read config from [./config/nrfcfg.yaml]
+2026-01-21T15:44:09.746839871Z [INFO][NRF][Main] Log enable is set to [true]
+2026-01-21T15:44:09.750623636Z [INFO][NRF][Main] Log level is set to [info]
+2026-01-21T15:44:09.751360619Z [INFO][NRF][Main] Report Caller is set to [false]
+2026-01-21T15:44:09.751381259Z [INFO][NRF][Init] nrfconfig Info: Version[1.0.2] Description[NRF initial local configuration]
+2026-01-21T15:44:09.766839494Z [INFO][NRF][Init] generate new NRF cert
+2026-01-21T15:44:09.791144621Z [INFO][NRF][SBI] Binding addr: [nrf.free5gc.org:8000]
+2026-01-21T15:44:09.795635436Z [INFO][NRF][Init] Server starting
+2026-01-21T15:44:09.795735827Z [INFO][NRF][SBI] SBI server started
+2026-01-21T15:44:10.967196467Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-21T15:44:11.928380290Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-21T15:44:12.262896839Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-21T15:44:12.433119221Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-21T15:44:12.601491168Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-21T15:44:12.886860771Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-21T15:44:12.960714805Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-21T15:44:13.108031494Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-21T15:44:13.381244565Z [INFO][NRF][NFM] urilist update
+2026-01-21T15:44:13.383178020Z [INFO][NRF][NFM] urilist update
+2026-01-21T15:44:13.384312467Z [INFO][NRF][NFM] urilist update
+2026-01-21T15:44:13.384805446Z [INFO][NRF][NFM] urilist update
+2026-01-21T15:44:13.389360162Z [INFO][NRF][NFM] urilist update
+2026-01-21T15:44:13.465584932Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-21T15:44:13.468927046Z [INFO][NRF][NFM] urilist update
+2026-01-21T15:44:13.473706146Z [INFO][NRF][NFM] urilist update
+2026-01-21T15:44:13.481199524Z [INFO][NRF][NFM] urilist update
+2026-01-21T15:44:13.481578977Z [INFO][NRF][NFM] urilist update
+2026-01-21T15:44:13.611205024Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-21T15:44:13.642826269Z [INFO][NRF][NFM] urilist update
+2026-01-21T15:44:13.662587397Z [INFO][NRF][NFM] Create NF Profile: 85646d01-10d5-4048-b18c-7db4ba090a72
+2026-01-21T15:44:13.669802382Z [INFO][NRF][NFM] Use NF certPath: cert/nssf.pem
+2026-01-21T15:44:13.681634291Z [INFO][NRF][GIN] | 201 |   10.100.200.12 | PUT     | /nnrf-nfm/v1/nf-instances/85646d01-10d5-4048-b18c-7db4ba090a72 |  |
+2026-01-21T15:44:13.947063062Z [INFO][NRF][NFM] Create NF Profile: d2df5838-9efa-42b1-968a-1b49e6032888
+2026-01-21T15:44:13.951471440Z [INFO][NRF][NFM] Use NF certPath: cert/smf.pem
+2026-01-21T15:44:13.961341975Z [INFO][NRF][GIN] | 201 |    10.100.200.7 | PUT     | /nnrf-nfm/v1/nf-instances/d2df5838-9efa-42b1-968a-1b49e6032888 |  |
+2026-01-21T15:44:13.965488069Z [INFO][NRF][NFM] Create NF Profile: 6c72f83f-6338-4f98-a54b-96fcaa00eddd
+2026-01-21T15:44:13.972696146Z [INFO][NRF][NFM] Use NF certPath: cert/udr.pem
+2026-01-21T15:44:13.994635106Z [INFO][NRF][NFM] Create NF Profile: 251ef88b-7eee-4a4e-9de3-589c02e2121d
+2026-01-21T15:44:13.997241780Z [INFO][NRF][GIN] | 201 |   10.100.200.10 | PUT     | /nnrf-nfm/v1/nf-instances/6c72f83f-6338-4f98-a54b-96fcaa00eddd |  |
+2026-01-21T15:44:14.008872079Z [INFO][NRF][NFM] Use NF certPath: cert/nef.pem
+2026-01-21T15:44:14.025966409Z [INFO][NRF][GIN] | 201 |   10.100.200.11 | PUT     | /nnrf-nfm/v1/nf-instances/251ef88b-7eee-4a4e-9de3-589c02e2121d |  |
+2026-01-21T15:44:14.197840677Z [INFO][NRF][NFM] Create NF Profile: 9079c612-7fdc-475c-9c9b-94fc32a8d7b2
+2026-01-21T15:44:14.218299779Z [INFO][NRF][NFM] Create NF Profile: 46ef9387-033d-48fe-aa0b-c094f3da3fc4
+2026-01-21T15:44:14.223255576Z [INFO][NRF][NFM] Use NF certPath: cert/udm.pem
+2026-01-21T15:44:14.224103551Z [INFO][NRF][NFM] Use NF certPath: cert/pcf.pem
+2026-01-21T15:44:14.249286760Z [INFO][NRF][GIN] | 201 |    10.100.200.8 | PUT     | /nnrf-nfm/v1/nf-instances/9079c612-7fdc-475c-9c9b-94fc32a8d7b2 |  |
+2026-01-21T15:44:14.254825026Z [INFO][NRF][NFM] Create NF Profile: 65923c6b-4950-4a83-a929-774261a994dd
+2026-01-21T15:44:14.263140229Z [INFO][NRF][NFM] Use NF certPath: cert/ausf.pem
+2026-01-21T15:44:14.263857525Z [INFO][NRF][GIN] | 201 |    10.100.200.9 | PUT     | /nnrf-nfm/v1/nf-instances/46ef9387-033d-48fe-aa0b-c094f3da3fc4 |  |
+2026-01-21T15:44:14.285339467Z [INFO][NRF][NFM] Create NF Profile: 4d914157-d271-4117-8ef4-85f9d4f082e4
+2026-01-21T15:44:14.288311256Z [INFO][NRF][NFM] Use NF certPath: cert/af.pem
+2026-01-21T15:44:14.295657891Z [WARN][NRF][NFM] No NF cert: parse cert pem: x509: malformed serial number; generate new one
+2026-01-21T15:44:14.301113359Z [INFO][NRF][GIN] | 201 |    10.100.200.5 | PUT     | /nnrf-nfm/v1/nf-instances/65923c6b-4950-4a83-a929-774261a994dd |  |
+2026-01-21T15:44:14.302324856Z [INFO][NRF][NFM] Create NF Profile: 8d0fa777-a00c-4f2f-960c-58325f056bb3
+2026-01-21T15:44:14.307738234Z [INFO][NRF][NFM] Use NF certPath: cert/chf.pem
+2026-01-21T15:44:14.314343681Z [INFO][NRF][GIN] | 201 |    10.100.200.6 | PUT     | /nnrf-nfm/v1/nf-instances/4d914157-d271-4117-8ef4-85f9d4f082e4 |  |
+2026-01-21T15:44:14.314384187Z [INFO][NRF][NFM] Create NF Profile: 3f965bdf-17d6-49a0-a863-bd6524fa5660
+2026-01-21T15:44:14.317902307Z [INFO][NRF][GIN] | 201 |   10.100.200.13 | PUT     | /nnrf-nfm/v1/nf-instances/8d0fa777-a00c-4f2f-960c-58325f056bb3 |  |
+2026-01-21T15:44:14.320568613Z [INFO][NRF][NFM] Use NF certPath: cert/amf.pem
+2026-01-21T15:44:14.343204667Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-21T15:44:14.352155781Z [INFO][NRF][GIN] | 201 |   10.100.200.16 | PUT     | /nnrf-nfm/v1/nf-instances/3f965bdf-17d6-49a0-a863-bd6524fa5660 |  |
+2026-01-21T15:44:14.352652948Z [INFO][NRF][NFM] urilist update
+2026-01-21T15:44:14.358863233Z [INFO][NRF][NFM] NFRegister NfProfile Update: 4d914157-d271-4117-8ef4-85f9d4f082e4
+2026-01-21T15:44:14.362885532Z [INFO][NRF][GIN] | 200 |    10.100.200.6 | PUT     | /nnrf-nfm/v1/nf-instances/4d914157-d271-4117-8ef4-85f9d4f082e4 |  |
+2026-01-21T15:44:15.026001611Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-21T15:44:15.032058845Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-21T15:44:15.034120661Z [INFO][NRF][GIN] | 200 |    10.100.200.6 | POST    | /oauth2/token |  |
+2026-01-21T15:44:15.050790073Z [INFO][NRF][DISC] Handle NFDiscoveryRequest

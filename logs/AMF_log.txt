@@ -1,0 +1,101 @@
+2026-01-21T15:44:13.296974142Z [INFO][AMF][Main] AMF version:
+        free5GC version: v4.1.0
+        build time:      2025-10-04T05:59:43Z
+        commit hash:     f2a5096a
+        commit time:     2025-07-31T11:01:14Z
+        go version:      go1.24.5 linux/amd64
+2026-01-21T15:44:13.310570966Z [INFO][AMF][CFG] Read config from [./config/amfcfg.yaml]
+2026-01-21T15:44:13.354538753Z [INFO][AMF][Main] Log enable is set to [true]
+2026-01-21T15:44:13.354593538Z [INFO][AMF][Main] Log level is set to [info]
+2026-01-21T15:44:13.354610149Z [INFO][AMF][Main] Report Caller is set to [false]
+2026-01-21T15:44:13.359012191Z [INFO][AMF][SBI] Binding addr: [amf.free5gc.org:8000]
+2026-01-21T15:44:13.359116169Z [INFO][AMF][Util] amfconfig Info: Version[1.0.9]
+2026-01-21T15:44:13.370288022Z [INFO][AMF][Init] Server started
+2026-01-21T15:44:13.373729466Z [INFO][AMF][Ngap] Listen on 10.100.200.16:38412
+2026-01-21T15:44:14.355646271Z [INFO][AMF][Main] OAuth2 setting receive from NRF: true
+2026-01-21T15:44:14.355718940Z [INFO][AMF][SBI] Start SBI server (listen on amf.free5gc.org:8000)
+2026-01-21T15:44:14.760881325Z [INFO][AMF][Ngap] [AMF] SCTP Accept from: 10.100.200.15/10.0.0.1:33210
+2026-01-21T15:44:14.762251082Z [INFO][AMF][Ngap] Create a new NG connection for: 10.100.200.15/10.0.0.1:33210
+2026-01-21T15:44:14.763432793Z [INFO][AMF][Ngap][ran_addr:10.100.200.15/10.0.0.1:33210] Handle NGSetupRequest
+2026-01-21T15:44:14.763463952Z [WARN][AMF][Ngap][ran_addr:10.100.200.15/10.0.0.1:33210] Missing IE PagingDRX
+2026-01-21T15:44:14.763535438Z [INFO][AMF][Ngap][ran_addr:10.100.200.15/10.0.0.1:33210] Send NG-Setup response
+2026-01-21T15:44:14.816351858Z [INFO][AMF][Ngap] [AMF] SCTP Accept from: 10.100.200.14:41677
+2026-01-21T15:44:14.822204803Z [INFO][AMF][Ngap] Create a new NG connection for: 10.100.200.14:41677
+2026-01-21T15:44:14.822346974Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Handle NGSetupRequest
+2026-01-21T15:44:14.822388974Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Send NG-Setup response
+2026-01-21T15:44:51.962103158Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Handle InitialUEMessage
+2026-01-21T15:44:51.963090569Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] New RanUe [RanUeNgapID:1][AmfUeNgapID:1]
+2026-01-21T15:44:51.963766947Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] 5GSMobileIdentity ["SUCI":"suci-0-208-93-0000-0-0-0000000001", err: <nil>]
+2026-01-21T15:44:51.964047000Z [INFO][AMF][CTX] New AmfUe [supi:][guti:20893cafe0000000001]
+2026-01-21T15:44:51.964328957Z [INFO][AMF][Gmm] Handle event[Gmm Message], transition from [Deregistered] to [Deregistered]
+2026-01-21T15:44:51.964355357Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] Handle Registration Request
+2026-01-21T15:44:51.964370055Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] RegistrationType: Initial Registration
+2026-01-21T15:44:51.964391486Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] MobileIdentity5GS: SUCI[suci-0-208-93-0000-0-0-0000000001]
+2026-01-21T15:44:51.964654146Z [INFO][AMF][Gmm] Handle event[Start Authentication], transition from [Deregistered] to [Authentication]
+2026-01-21T15:44:51.964690916Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] Authentication procedure
+2026-01-21T15:44:52.188714208Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] Send Authentication Request
+2026-01-21T15:44:52.189611066Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Send Downlink Nas Transport
+2026-01-21T15:44:52.190863896Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] Start T3560 timer
+2026-01-21T15:44:52.198541891Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Handle UplinkNASTransport
+2026-01-21T15:44:52.198577789Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Handle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-01-21T15:44:52.198624127Z [INFO][AMF][Gmm] Handle event[Gmm Message], transition from [Authentication] to [Authentication]
+2026-01-21T15:44:52.198630860Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] Handle Authentication Response
+2026-01-21T15:44:52.198636681Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:] Stop T3560 timer
+2026-01-21T15:44:52.288413791Z [INFO][AMF][Gmm] Handle event[Authentication Success], transition from [Authentication] to [SecurityMode]
+2026-01-21T15:44:52.290206525Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Send Security Mode Command
+2026-01-21T15:44:52.290262842Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Send Downlink Nas Transport
+2026-01-21T15:44:52.290439689Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Start T3560 timer
+2026-01-21T15:44:52.297642804Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Handle UplinkNASTransport
+2026-01-21T15:44:52.298538981Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Handle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-01-21T15:44:52.299153360Z [INFO][AMF][Gmm] Handle event[Gmm Message], transition from [SecurityMode] to [SecurityMode]
+2026-01-21T15:44:52.299168479Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Handle Security Mode Complete
+2026-01-21T15:44:52.299175783Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Stop T3560 timer
+2026-01-21T15:44:52.299918618Z [INFO][AMF][Gmm] Handle event[SecurityMode Success], transition from [SecurityMode] to [ContextSetup]
+2026-01-21T15:44:52.300095555Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Handle InitialRegistration
+2026-01-21T15:44:52.397259171Z [INFO][AMF][Gmm] RequestedNssai: &{Iei:47 Len:10 Buffer:[4 1 1 2 3 4 1 17 34 51]}
+2026-01-21T15:44:52.397380342Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] RequestedNssai - ServingSnssai: &{Sst:1 Sd:010203}, HomeSnssai: <nil>
+2026-01-21T15:44:52.397411842Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] RequestedNssai - ServingSnssai: &{Sst:1 Sd:112233}, HomeSnssai: <nil>
+2026-01-21T15:44:52.896380792Z [INFO][AMF][Comm] Handle AMF Status Change Subscribe Request
+2026-01-21T15:44:52.896765244Z [INFO][AMF][Comm] new AMF Status Subscription[1]
+2026-01-21T15:44:52.896805691Z [INFO][AMF][GIN] | 201 |    10.100.200.9 | POST    | /namf-comm/v1/subscriptions |  |
+2026-01-21T15:44:52.898037523Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Send Registration Accept
+2026-01-21T15:44:52.898447654Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Send Initial Context Setup Request
+2026-01-21T15:44:52.900055746Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Start T3550 timer
+2026-01-21T15:44:52.901537387Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Handle InitialContextSetupResponse
+2026-01-21T15:44:52.902063228Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Handle InitialContextSetupResponse (RAN UE NGAP ID: 1)
+2026-01-21T15:44:53.110285290Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Handle UplinkNASTransport
+2026-01-21T15:44:53.110947114Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Handle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-01-21T15:44:53.112186447Z [INFO][AMF][Gmm] Handle event[Gmm Message], transition from [ContextSetup] to [ContextSetup]
+2026-01-21T15:44:53.112255799Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Handle Registration Complete
+2026-01-21T15:44:53.112775198Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Stop T3550 timer
+2026-01-21T15:44:53.112818200Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Send Configuration Update Command
+2026-01-21T15:44:53.112840222Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Send Downlink Nas Transport
+2026-01-21T15:44:53.114344643Z [INFO][AMF][Gmm] Handle event[ContextSetup Success], transition from [ContextSetup] to [Registered]
+2026-01-21T15:44:53.115955019Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Handle UplinkNASTransport
+2026-01-21T15:44:53.115992731Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Handle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-01-21T15:44:53.116060711Z [INFO][AMF][Gmm] Handle event[Gmm Message], transition from [Registered] to [Registered]
+2026-01-21T15:44:53.116311698Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Handle UL NAS Transport
+2026-01-21T15:44:53.116343389Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Transport 5GSM Message to SMF
+2026-01-21T15:44:53.116368547Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Select SMF [snssai: {Sst:1 Sd:010203}, dnn: internet]
+2026-01-21T15:44:53.175433755Z [WARN][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] nsiInformation is still nil, use default NRF[http://nrf.free5gc.org:8000]
+2026-01-21T15:44:53.762031142Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] create smContext[pduSessionID: 1] Success
+2026-01-21T15:44:53.762832308Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Handle UplinkNASTransport
+2026-01-21T15:44:53.762862866Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Handle UplinkNASTransport (RAN UE NGAP ID: 1)
+2026-01-21T15:44:53.762927549Z [INFO][AMF][Gmm] Handle event[Gmm Message], transition from [Registered] to [Registered]
+2026-01-21T15:44:53.762945243Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Handle UL NAS Transport
+2026-01-21T15:44:53.762958758Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Transport 5GSM Message to SMF
+2026-01-21T15:44:53.762977254Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] Select SMF [snssai: {Sst:1 Sd:112233}, dnn: internet]
+2026-01-21T15:44:53.800200933Z [INFO][AMF][Producer] Handle N1N2 Message Transfer Request
+2026-01-21T15:44:53.800347853Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Send PDU Session Resource Setup Request
+2026-01-21T15:44:53.800631944Z [INFO][AMF][GIN] | 200 |    10.100.200.7 | POST    | /namf-comm/v1/ue-contexts/imsi-208930000000001/n1-n2-messages |  |
+2026-01-21T15:44:53.809645116Z [WARN][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] nsiInformation is still nil, use default NRF[http://nrf.free5gc.org:8000]
+2026-01-21T15:44:54.302310833Z [INFO][AMF][Gmm][amf_ue_ngap_id:RU:1,AU:1(3GPP)][supi:SUPI:imsi-208930000000001] create smContext[pduSessionID: 2] Success
+2026-01-21T15:44:54.302480707Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Handle PDUSessionResourceSetupResponse
+2026-01-21T15:44:54.302496056Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Not comprehended IE ID 0x0079 (criticality: ignore)
+2026-01-21T15:44:54.302506325Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Handle PDUSessionResourceSetupResponse (RAN UE NGAP ID: 1)
+2026-01-21T15:44:54.387285638Z [INFO][AMF][Producer] Handle N1N2 Message Transfer Request
+2026-01-21T15:44:54.387557686Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Send PDU Session Resource Setup Request
+2026-01-21T15:44:54.388517684Z [INFO][AMF][GIN] | 200 |    10.100.200.7 | POST    | /namf-comm/v1/ue-contexts/imsi-208930000000001/n1-n2-messages |  |
+2026-01-21T15:44:54.394537635Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Handle PDUSessionResourceSetupResponse
+2026-01-21T15:44:54.395077643Z [INFO][AMF][Ngap][ran_addr:10.100.200.14:41677] Not comprehended IE ID 0x0079 (criticality: ignore)
+2026-01-21T15:44:54.395465944Z [INFO][AMF][Ngap][amf_ue_ngap_id:RU:1,AU:1(3GPP)][ran_addr:10.100.200.14:41677] Handle PDUSessionResourceSetupResponse (RAN UE NGAP ID: 1)

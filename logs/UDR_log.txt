@@ -1,0 +1,37 @@
+2026-01-21T15:44:12.853199220Z [INFO][UDR][Main] UDR version:
+        free5GC version: v4.1.0
+        build time:      2025-10-04T06:14:23Z
+        commit hash:     7d86f2f2
+        commit time:     2025-08-20T03:39:39Z
+        go version:      go1.24.5 linux/amd64
+2026-01-21T15:44:12.860263992Z [INFO][UDR][CFG] Read config from [./config/udrcfg.yaml]
+2026-01-21T15:44:12.862354563Z [INFO][UDR][Util] udrconfig Info: Version[1.1.0] Description[UDR initial local configuration]
+2026-01-21T15:44:12.862398958Z [INFO][UDR][Main] Log enable is set to [true]
+2026-01-21T15:44:12.862407694Z [INFO][UDR][Main] Log level is set to [info]
+2026-01-21T15:44:12.862413946Z [INFO][UDR][Main] Report Caller is set to [false]
+2026-01-21T15:44:14.003854171Z [INFO][UDR][Main] OAuth2 setting receive from NRF: true
+2026-01-21T15:44:14.003981573Z [INFO][UDR][Init] register to NRF successfully
+2026-01-21T15:44:14.003994147Z [INFO][UDR][Init] Server started
+2026-01-21T15:44:14.004001511Z [INFO][UDR][Init] UDR Config Info: Version[1.1.0] Description[UDR initial local configuration]
+2026-01-21T15:44:14.006968705Z [INFO][UDR][SBI] Starting server...
+2026-01-21T15:44:52.163377614Z [INFO][UDR][GIN] | 200 |    10.100.200.8 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000001/authentication-data/authentication-subscription |  |
+2026-01-21T15:44:52.180637148Z [INFO][UDR][GIN] | 204 |    10.100.200.8 | PATCH   | /nudr-dr/v2/subscription-data/imsi-208930000000001/authentication-data/authentication-subscription |  |
+2026-01-21T15:44:52.285602698Z [INFO][UDR][GIN] | 204 |    10.100.200.8 | PUT     | /nudr-dr/v2/subscription-data/imsi-208930000000001/authentication-data/authentication-status |  |
+2026-01-21T15:44:52.381365414Z [INFO][UDR][DataRepo] QueryAmDataProcedure: ueId: imsi-208930000000001, servingPlmnId: 20893
+2026-01-21T15:44:52.384502107Z [INFO][UDR][GIN] | 200 |    10.100.200.8 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000001/20893/provisioned-data/am-data?supported-features= |  |
+2026-01-21T15:44:52.489350744Z [INFO][UDR][GIN] | 204 |    10.100.200.8 | PUT     | /nudr-dr/v2/subscription-data/imsi-208930000000001/context-data/amf-3gpp-access |  |
+2026-01-21T15:44:52.547656243Z [INFO][UDR][DataRepo] QueryAmDataProcedure: ueId: imsi-208930000000001, servingPlmnId: 20893
+2026-01-21T15:44:52.549612581Z [INFO][UDR][GIN] | 200 |    10.100.200.8 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000001/20893/provisioned-data/am-data?supported-features= |  |
+2026-01-21T15:44:52.610105348Z [INFO][UDR][GIN] | 200 |    10.100.200.8 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000001/20893/provisioned-data/smf-selection-subscription-data?supported-features= |  |
+2026-01-21T15:44:52.674954550Z [INFO][UDR][GIN] | 200 |    10.100.200.8 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000001/context-data/smf-registrations?supported-features= |  |
+2026-01-21T15:44:52.738743594Z [INFO][UDR][GIN] | 201 |    10.100.200.8 | POST    | /nudr-dr/v2/subscription-data/imsi-208930000000001/context-data/sdm-subscriptions |  |
+2026-01-21T15:44:52.844891786Z [INFO][UDR][GIN] | 200 |    10.100.200.9 | GET     | /nudr-dr/v2/policy-data/ues/imsi-208930000000001/am-data |  |
+2026-01-21T15:44:53.324097249Z [INFO][UDR][GIN] | 200 |    10.100.200.8 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000001/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D |  |
+2026-01-21T15:44:53.458251542Z [INFO][UDR][GIN] | 200 |    10.100.200.9 | GET     | /nudr-dr/v2/policy-data/ues/imsi-208930000000001/sm-data?dnn=internet&snssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D |  |
+2026-01-21T15:44:53.507286295Z [INFO][UDR][GIN] | 200 |    10.100.200.9 | GET     | /nudr-dr/v2/application-data/influenceData?dnns=internet&snssais=%5B%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%5D&supis=imsi-208930000000001 |  |
+2026-01-21T15:44:53.534391186Z [INFO][UDR][GIN] | 201 |    10.100.200.9 | POST    | /nudr-dr/v2/application-data/influenceData/subs-to-notify |  |
+2026-01-21T15:44:53.753784763Z [INFO][UDR][GIN] | 201 |    10.100.200.8 | POST    | /nudr-dr/v2/subscription-data/imsi-208930000000001/context-data/sdm-subscriptions |  |
+2026-01-21T15:44:53.975739223Z [INFO][UDR][GIN] | 200 |    10.100.200.8 | GET     | /nudr-dr/v2/subscription-data/imsi-208930000000001/20893/provisioned-data/sm-data?single-nssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22112233%22%7D |  |
+2026-01-21T15:44:54.095992122Z [INFO][UDR][GIN] | 200 |    10.100.200.9 | GET     | /nudr-dr/v2/policy-data/ues/imsi-208930000000001/sm-data?dnn=internet&snssai=%7B%22sst%22%3A1%2C%22sd%22%3A%22112233%22%7D |  |
+2026-01-21T15:44:54.138863585Z [INFO][UDR][GIN] | 200 |    10.100.200.9 | GET     | /nudr-dr/v2/application-data/influenceData?dnns=internet&snssais=%5B%7B%22sst%22%3A1%2C%22sd%22%3A%22112233%22%7D%5D&supis=imsi-208930000000001 |  |
+2026-01-21T15:44:54.168385544Z [INFO][UDR][GIN] | 201 |    10.100.200.9 | POST    | /nudr-dr/v2/application-data/influenceData/subs-to-notify |  |
