@@ -1,0 +1,318 @@
+root@asd:/home/asd/share/free5gc-compose# docker logs nrf
+2026-01-17T17:31:33.326648839Z [INFO][NRF][Main] NRF version:
+        free5GC version: v4.1.0
+        build time:      2025-10-04T06:09:28Z
+        commit hash:     cc1ce6e6
+        commit time:     2025-08-05T09:57:51Z
+        go version:      go1.24.5 linux/amd64
+2026-01-17T17:31:33.331981043Z [INFO][NRF][CFG] Read config from [./config/nrfcfg.yaml]
+2026-01-17T17:31:33.337921455Z [INFO][NRF][Main] Log enable is set to [true]
+2026-01-17T17:31:33.337954425Z [INFO][NRF][Main] Log level is set to [info]
+2026-01-17T17:31:33.337965200Z [INFO][NRF][Main] Report Caller is set to [false]
+2026-01-17T17:31:33.337986933Z [INFO][NRF][Init] nrfconfig Info: Version[1.0.2] Description[NRF initial local configuration]
+2026-01-17T17:31:33.358491532Z [INFO][NRF][Init] generate new NRF cert
+2026-01-17T17:31:33.365725678Z [INFO][NRF][SBI] Binding addr: [nrf.free5gc.org:8000]
+2026-01-17T17:31:33.366105711Z [INFO][NRF][Init] Server starting
+2026-01-17T17:31:33.366128716Z [INFO][NRF][SBI] SBI server started
+2026-01-17T17:31:34.746992414Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-17T17:31:34.894854929Z [INFO][NRF][NFM] urilist update
+2026-01-17T17:31:34.953165712Z [INFO][NRF][NFM] Create NF Profile: 1970942b-dd95-4f95-aab0-12a984287f95
+2026-01-17T17:31:34.957349921Z [INFO][NRF][NFM] Use NF certPath: cert/smf.pem
+2026-01-17T17:31:34.967083516Z [INFO][NRF][GIN] | 201 |    10.100.200.5 | PUT     | /nnrf-nfm/v1/nf-instances/1970942b-dd95-4f95-aab0-12a984287f95 |  |
+2026-01-17T17:31:35.075522149Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-17T17:31:35.080062812Z [INFO][NRF][NFM] urilist update
+2026-01-17T17:31:35.083320881Z [INFO][NRF][NFM] Create NF Profile: d8ac4256-dc21-40eb-b072-a8adb3dddb6a
+2026-01-17T17:31:35.084255968Z [INFO][NRF][NFM] Use NF certPath: cert/nssf.pem
+2026-01-17T17:31:35.098111111Z [INFO][NRF][GIN] | 201 |    10.100.200.6 | PUT     | /nnrf-nfm/v1/nf-instances/d8ac4256-dc21-40eb-b072-a8adb3dddb6a |  |
+2026-01-17T17:31:35.292066222Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-17T17:31:35.294522223Z [INFO][NRF][NFM] urilist update
+2026-01-17T17:31:35.296588140Z [INFO][NRF][NFM] Create NF Profile: f6af5bd0-11db-4bf2-9536-845df6b17be8
+2026-01-17T17:31:35.303366458Z [INFO][NRF][NFM] Use NF certPath: cert/amf.pem
+2026-01-17T17:31:35.322234598Z [INFO][NRF][GIN] | 201 |   10.100.200.16 | PUT     | /nnrf-nfm/v1/nf-instances/f6af5bd0-11db-4bf2-9536-845df6b17be8 |  |
+2026-01-17T17:31:35.602499967Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-17T17:31:35.608368799Z [INFO][NRF][NFM] urilist update
+2026-01-17T17:31:35.610069636Z [INFO][NRF][NFM] Create NF Profile: 42e14542-7118-48aa-a65a-64c6cc6e60e0
+2026-01-17T17:31:35.613309431Z [INFO][NRF][NFM] Use NF certPath: cert/udr.pem
+2026-01-17T17:31:35.641940049Z [INFO][NRF][GIN] | 201 |    10.100.200.8 | PUT     | /nnrf-nfm/v1/nf-instances/42e14542-7118-48aa-a65a-64c6cc6e60e0 |  |
+2026-01-17T17:31:35.769433220Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-17T17:31:35.782603669Z [INFO][NRF][NFM] urilist update
+2026-01-17T17:31:35.789426073Z [INFO][NRF][NFM] Create NF Profile: e770ae99-0ae5-4183-8e0a-5c91ce231d6f
+2026-01-17T17:31:35.793651333Z [INFO][NRF][NFM] Use NF certPath: cert/ausf.pem
+2026-01-17T17:31:35.814453522Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-17T17:31:35.816227295Z [INFO][NRF][GIN] | 201 |    10.100.200.7 | PUT     | /nnrf-nfm/v1/nf-instances/e770ae99-0ae5-4183-8e0a-5c91ce231d6f |  |
+2026-01-17T17:31:35.980753089Z [INFO][NRF][NFM] urilist update
+2026-01-17T17:31:35.983728110Z [INFO][NRF][NFM] Create NF Profile: 852296ce-fb32-470c-ae51-d97e09de8a14
+2026-01-17T17:31:36.015649162Z [INFO][NRF][NFM] Use NF certPath: cert/pcf.pem
+2026-01-17T17:31:36.047424920Z [INFO][NRF][GIN] | 201 |    10.100.200.9 | PUT     | /nnrf-nfm/v1/nf-instances/852296ce-fb32-470c-ae51-d97e09de8a14 |  |
+2026-01-17T17:31:36.631006925Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-17T17:31:36.647464577Z [INFO][NRF][NFM] urilist update
+2026-01-17T17:31:36.648373351Z [INFO][NRF][NFM] Create NF Profile: 9ac769cb-c632-4118-8759-5f95e80d2397
+2026-01-17T17:31:36.648893280Z [INFO][NRF][NFM] Use NF certPath: cert/af.pem
+2026-01-17T17:31:36.655698286Z [WARN][NRF][NFM] No NF cert: parse cert pem: x509: malformed serial number; generate new one
+2026-01-17T17:31:36.666497043Z [INFO][NRF][GIN] | 201 |   10.100.200.11 | PUT     | /nnrf-nfm/v1/nf-instances/9ac769cb-c632-4118-8759-5f95e80d2397 |  |
+2026-01-17T17:31:36.680407421Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-17T17:31:36.701466252Z [INFO][NRF][NFM] urilist update
+2026-01-17T17:31:36.702483446Z [INFO][NRF][NFM] Create NF Profile: e896e8cc-506a-424a-9b0d-086993402c9a
+2026-01-17T17:31:36.711207120Z [INFO][NRF][NFM] Use NF certPath: cert/nef.pem
+2026-01-17T17:31:36.717988706Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-17T17:31:36.719970699Z [INFO][NRF][GIN] | 201 |   10.100.200.12 | PUT     | /nnrf-nfm/v1/nf-instances/e896e8cc-506a-424a-9b0d-086993402c9a |  |
+2026-01-17T17:31:36.727725964Z [INFO][NRF][NFM] urilist update
+2026-01-17T17:31:36.728704065Z [INFO][NRF][NFM] NFRegister NfProfile Update: 9ac769cb-c632-4118-8759-5f95e80d2397
+2026-01-17T17:31:36.729448293Z [INFO][NRF][GIN] | 200 |   10.100.200.11 | PUT     | /nnrf-nfm/v1/nf-instances/9ac769cb-c632-4118-8759-5f95e80d2397 |  |
+2026-01-17T17:31:37.262070834Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-17T17:31:37.263833109Z [INFO][NRF][NFM] urilist update
+2026-01-17T17:31:37.266392078Z [INFO][NRF][NFM] Create NF Profile: 84697c4f-cfcf-4bfa-81e8-bd58bdeea81f
+2026-01-17T17:31:37.279099783Z [INFO][NRF][NFM] Use NF certPath: cert/udm.pem
+2026-01-17T17:31:37.295835566Z [INFO][NRF][GIN] | 201 |   10.100.200.10 | PUT     | /nnrf-nfm/v1/nf-instances/84697c4f-cfcf-4bfa-81e8-bd58bdeea81f |  |
+2026-01-17T17:31:37.417410057Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:31:37.424417014Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:31:37.428443680Z [INFO][NRF][GIN] | 200 |   10.100.200.11 | POST    | /oauth2/token |  |
+2026-01-17T17:31:37.434130575Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:31:37.476110469Z [INFO][NRF][GIN] | 200 |   10.100.200.11 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AF&target-nf-type=AMF |  |
+2026-01-17T17:31:37.500046946Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:31:37.507356933Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:31:37.512369889Z [INFO][NRF][GIN] | 200 |   10.100.200.11 | POST    | /oauth2/token |  |
+2026-01-17T17:31:37.529986942Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:31:37.532297209Z [INFO][NRF][GIN] | 200 |   10.100.200.11 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AF&target-nf-type=SMF |  |
+2026-01-17T17:31:37.767097976Z [INFO][NRF][NFM] Handle NFRegisterRequest
+2026-01-17T17:31:37.774165119Z [INFO][NRF][NFM] urilist update
+2026-01-17T17:31:37.776097462Z [INFO][NRF][NFM] Create NF Profile: 5c21e239-b89a-4e16-a58f-724efee4b642
+2026-01-17T17:31:37.777073508Z [INFO][NRF][NFM] Use NF certPath: cert/chf.pem
+2026-01-17T17:31:37.788443948Z [INFO][NRF][GIN] | 201 |   10.100.200.14 | PUT     | /nnrf-nfm/v1/nf-instances/5c21e239-b89a-4e16-a58f-724efee4b642 |  |
+2026-01-17T17:32:29.048199007Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.054512619Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.058345820Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.066175946Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:29.068516059Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=AUSF |  |
+2026-01-17T17:32:29.078464945Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.085008810Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.094987413Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.111218209Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.117587344Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.120248008Z [INFO][NRF][GIN] | 200 |    10.100.200.7 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.126561213Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:29.130021232Z [INFO][NRF][GIN] | 200 |    10.100.200.7 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AUSF&service-names=nudm-ueau&target-nf-type=UDM |  |
+2026-01-17T17:32:29.137048854Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.141274538Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.147653882Z [INFO][NRF][GIN] | 200 |    10.100.200.7 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.163275337Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.172191765Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.176221835Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.182954226Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.190100970Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.192520875Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.196900389Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:29.199383722Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=UDM&target-nf-type=UDR |  |
+2026-01-17T17:32:29.258233234Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.271948364Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.280767787Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.296229266Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.301861602Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.307207500Z [INFO][NRF][GIN] | 200 |    10.100.200.7 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.322842911Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.328342877Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.331924905Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.361453911Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.367490838Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.371948639Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.377697772Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:29.379942604Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&supi=imsi-208930000000001&target-nf-type=UDM |  |
+2026-01-17T17:32:29.382191382Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.387088982Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.392208263Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.405414746Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.415043153Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.420440904Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.443171204Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.451516287Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.455347894Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.466071397Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:29.469358911Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&supi=imsi-208930000000001&target-nf-type=UDM |  |
+2026-01-17T17:32:29.471404232Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.476812481Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.481480368Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.495869825Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.501248800Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.510770106Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.535457558Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.539293680Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.544560977Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.557240054Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.563857496Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.568888977Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.585134704Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.593789661Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.597087706Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.610386590Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.616800315Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.621484621Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.638383177Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.643262482Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.648246117Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.664913718Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.676575812Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.681564796Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.700506616Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.706374616Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.711862424Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.733006934Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.737958391Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.741812353Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.766424368Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.771510284Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.774173258Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.785202114Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:29.793242039Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | GET     | /nnrf-disc/v1/nf-instances?preferred-locality=area1&requester-nf-type=AMF&supi=imsi-208930000000001&target-nf-type=PCF |  |
+2026-01-17T17:32:29.802440603Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.810778624Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.814291004Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.830776949Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.837592015Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.840852014Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.846014142Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:29.847887600Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=PCF&target-nf-type=UDR |  |
+2026-01-17T17:32:29.855424265Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.861153882Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.865393565Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.891339141Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.895310841Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.898185102Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | POST    | /oauth2/token |  |
+2026-01-17T17:32:29.904177315Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:29.907643775Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | GET     | /nnrf-disc/v1/nf-instances?guami=%7B%22plmnId%22%3A%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D%2C%22amfId%22%3A%22cafe00%22%7D&requester-nf-type=PCF&target-nf-type=AMF |  |
+2026-01-17T17:32:29.910848642Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:29.915968268Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:29.920352543Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.161066480Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.174103632Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.176854593Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.183817565Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:30.186523527Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=AMF&target-nf-type=NSSF |  |
+2026-01-17T17:32:30.193270068Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.199243553Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.205250255Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.225043748Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.231086591Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.233696753Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.248032385Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:30.252226627Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | GET     | /nnrf-disc/v1/nf-instances?dnn=internet&preferred-locality=area1&requester-nf-type=AMF&service-names=nsmf-pdusession&snssais=%5B%7B%22sst%22%3A1%2C%22sd%22%3A%22010203%22%7D%5D&target-nf-type=SMF&target-plmn-list=%5B%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D%5D |  |
+2026-01-17T17:32:30.253993992Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.260685251Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.265135775Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.292550291Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.298875713Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.302270310Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.307218349Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:30.309238113Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-type=UDM |  |
+2026-01-17T17:32:30.316917283Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.321948130Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.327074422Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.344083022Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.351749807Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.357599472Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.381401527Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.387413685Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.390356236Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.395192596Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:30.398059084Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-instance-id=f6af5bd0-11db-4bf2-9536-845df6b17be8&target-nf-type=AMF |  |
+2026-01-17T17:32:30.409180026Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.414721037Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.418824191Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.423956294Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:30.427677274Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | GET     | /nnrf-disc/v1/nf-instances?preferred-locality=area1&requester-nf-type=SMF&target-nf-type=PCF |  |
+2026-01-17T17:32:30.430341452Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.435032649Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.442452328Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.457841066Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.463506862Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.466619511Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.512736377Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.520843558Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.525074504Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.541240811Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.546751850Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.551410354Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.569037716Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.574878692Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.578009054Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.581480856Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:30.584967502Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=PCF&target-nf-type=BSF |  |
+2026-01-17T17:32:30.595955248Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.599813940Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.603173102Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.607686357Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:30.609742728Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-type=CHF |  |
+2026-01-17T17:32:30.610742070Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.615565076Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.620318510Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:30.745334217Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:30.752053974Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:30.755864741Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:31.736346123Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:31.742530934Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:31.747714569Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | POST    | /oauth2/token |  |
+2026-01-17T17:32:31.773285194Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:31.782193025Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:31.787474932Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:31.818217975Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:31.824956096Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:31.828616893Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:31.838079502Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:31.847378586Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | GET     | /nnrf-disc/v1/nf-instances?dnn=internet&preferred-locality=area1&requester-nf-type=AMF&service-names=nsmf-pdusession&snssais=%5B%7B%22sst%22%3A1%2C%22sd%22%3A%22112233%22%7D%5D&target-nf-type=SMF&target-plmn-list=%5B%7B%22mcc%22%3A%22208%22%2C%22mnc%22%3A%2293%22%7D%5D |  |
+2026-01-17T17:32:31.852031367Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:31.857862835Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:31.862618488Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:31.881924811Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:31.888453297Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:31.891769887Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:31.897237942Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:31.900389906Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-type=UDM |  |
+2026-01-17T17:32:31.907837291Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:31.914479127Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:31.918662659Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:31.933405475Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:31.941506271Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:31.946385304Z [INFO][NRF][GIN] | 200 |   10.100.200.10 | POST    | /oauth2/token |  |
+2026-01-17T17:32:31.968763514Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:31.976950872Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:31.980940278Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:31.990316258Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:31.994311935Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-instance-id=f6af5bd0-11db-4bf2-9536-845df6b17be8&target-nf-type=AMF |  |
+2026-01-17T17:32:32.010258067Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:32.015205796Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:32.017801414Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:32.029010243Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:32.031683732Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | GET     | /nnrf-disc/v1/nf-instances?preferred-locality=area1&requester-nf-type=SMF&target-nf-type=PCF |  |
+2026-01-17T17:32:32.034885902Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:32.038750594Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:32.043084795Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:32.051220770Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:32.059103736Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:32.062389947Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | POST    | /oauth2/token |  |
+2026-01-17T17:32:32.093221192Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:32.098775831Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:32.103216210Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | POST    | /oauth2/token |  |
+2026-01-17T17:32:32.120542224Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:32.125764854Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:32.129296289Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | POST    | /oauth2/token |  |
+2026-01-17T17:32:32.144812775Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:32.157601170Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:32.161999428Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | POST    | /oauth2/token |  |
+2026-01-17T17:32:32.167475693Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:32.169134468Z [INFO][NRF][GIN] | 200 |    10.100.200.9 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=PCF&target-nf-type=BSF |  |
+2026-01-17T17:32:32.177849565Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:32.183163580Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:32.185679667Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:32.191908262Z [INFO][NRF][DISC] Handle NFDiscoveryRequest
+2026-01-17T17:32:32.194013471Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | GET     | /nnrf-disc/v1/nf-instances?requester-nf-type=SMF&target-nf-type=CHF |  |
+2026-01-17T17:32:32.199458255Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:32.204754300Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:32.209067395Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:32.268573133Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:32.278394721Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:32.288834790Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |
+2026-01-17T17:32:32.317056557Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:32.323918516Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:32.331046584Z [INFO][NRF][GIN] | 200 |    10.100.200.5 | POST    | /oauth2/token |  |
+2026-01-17T17:32:32.354110194Z [INFO][NRF][Token] In HTTPAccessTokenRequest
+2026-01-17T17:32:32.362287032Z [WARN][NRF][Token] Certificate verify: x509: certificate signed by unknown authority (possibly because of "x509: invalid signature: parent certificate cannot sign this kind of certificate" while trying to verify candidate authority certificate "NRF")
+2026-01-17T17:32:32.369636799Z [INFO][NRF][GIN] | 200 |   10.100.200.16 | POST    | /oauth2/token |  |

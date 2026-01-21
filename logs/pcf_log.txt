@@ -1,0 +1,25 @@
+root@asd:/home/asd/share/free5gc-compose# docker logs pcf
+2026-01-17T17:31:35.713074032Z [INFO][PCF][Main] pcf
+2026-01-17T17:31:35.713202892Z [INFO][PCF][Main] PCF version:
+        free5GC version: v4.1.0
+        build time:      2025-10-04T06:11:28Z
+        commit hash:     f74d8fda
+        commit time:     2025-08-22T02:31:08Z
+        go version:      go1.24.5 linux/amd64
+2026-01-17T17:31:35.727175082Z [INFO][PCF][CFG] Read config from [./config/pcfcfg.yaml]
+2026-01-17T17:31:35.761427845Z [INFO][PCF][Main] Log enable is set to [true]
+2026-01-17T17:31:35.761469595Z [INFO][PCF][Main] Log level is set to [info]
+2026-01-17T17:31:35.761478667Z [INFO][PCF][Main] Report Caller is set to [false]
+2026-01-17T17:31:35.761508278Z [INFO][PCF][Util] pcfconfig Info: Version[1.0.2] Description[PCF initial local configuration]
+2026-01-17T17:31:35.761856876Z [INFO][PCF][SBI] Binding addr: [pcf.free5gc.org:8000]
+2026-01-17T17:31:35.761906204Z [INFO][PCF][Init] Server started
+2026-01-17T17:31:36.048094288Z [INFO][PCF][Main] OAuth2 setting receive from NRF: true
+2026-01-17T17:31:36.048135718Z [INFO][PCF][SBI] Start SBI server (listen on pcf.free5gc.org:8000)
+2026-01-17T17:32:29.825233880Z [INFO][PCF][AmPol] Handle AM Policy Create Request
+2026-01-17T17:32:29.933051799Z [INFO][PCF][GIN] | 201 |   10.100.200.16 | POST    | /npcf-am-policy-control/v1/policies |  |
+2026-01-17T17:32:30.452518657Z [INFO][PCF][SMpolicy] Handle CreateSmPolicy
+2026-01-17T17:32:30.535888460Z [INFO][PCF][SMpolicy] Matched [0] trafficInfluDatas from UDR
+2026-01-17T17:32:30.588031908Z [INFO][PCF][GIN] | 201 |    10.100.200.5 | POST    | /npcf-smpolicycontrol/v1/sm-policies |  |
+2026-01-17T17:32:32.047171910Z [INFO][PCF][SMpolicy] Handle CreateSmPolicy
+2026-01-17T17:32:32.117237097Z [INFO][PCF][SMpolicy] Matched [0] trafficInfluDatas from UDR
+2026-01-17T17:32:32.171172506Z [INFO][PCF][GIN] | 201 |    10.100.200.5 | POST    | /npcf-smpolicycontrol/v1/sm-policies |  |

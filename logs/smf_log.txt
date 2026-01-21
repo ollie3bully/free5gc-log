@@ -1,0 +1,100 @@
+root@asd:/home/asd/share/free5gc-compose# docker logs smf
+2026-01-17T17:31:34.685672867Z [INFO][SMF][Main] SMF version:
+        free5GC version: v4.1.0
+        build time:      2025-10-04T06:11:48Z
+        commit hash:     52dbb652
+        commit time:     2025-08-20T03:13:44Z
+        go version:      go1.24.5 linux/amd64
+2026-01-17T17:31:34.693036651Z [INFO][SMF][CFG] Read config from [./config/smfcfg.yaml]
+2026-01-17T17:31:34.717594081Z [INFO][SMF][CFG] Read config from [./config/uerouting.yaml]
+2026-01-17T17:31:34.724381622Z [INFO][SMF][Main] Log enable is set to [true]
+2026-01-17T17:31:34.724437686Z [INFO][SMF][Main] Log level is set to [info]
+2026-01-17T17:31:34.724449024Z [INFO][SMF][Main] Report Caller is set to [false]
+2026-01-17T17:31:34.724465653Z [INFO][SMF][CTX] smfconfig Info: Version[1.0.7] Description[SMF initial local configuration]
+2026-01-17T17:31:34.724890875Z [INFO][SMF][CTX] Endpoints: [upf.free5gc.org]
+2026-01-17T17:31:34.734241374Z [INFO][SMF][Init] Server started
+2026-01-17T17:31:34.973740356Z [INFO][SMF][Main] OAuth2 setting receive from NRF: true
+2026-01-17T17:31:34.973942341Z [INFO][SMF][Init] SMF Registration to NRF {1970942b-dd95-4f95-aab0-12a984287f95  SMF REGISTERED [] 0 [{208 93}] [] [{1 010203 [] false} {1 112233 [] false}] [] []   [smf.free5gc.org] [] [] [] [] [] [] 0 0 0 <nil> area1 <nil> map[] <nil> map[] <nil> map[] <nil> map[] 0xc0000e8420 map[] <nil> map[] <nil> map[] <nil> map[] <nil> map[] <nil> <nil> <nil> map[] <nil> map[] map[] map[] map[oauth2:true] <nil> false [{1970942b-dd95-4f95-aab0-12a984287f95nsmf-pdusession nsmf-pdusession [{v1 https://smf.free5gc.org:8000/nsmf-pdusession/v1 2026-01-17 17:31:34.731065813 +0000 UTC}] https REGISTERED   [{smf.free5gc.org   8000}] http://smf.free5gc.org:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>} {1970942b-dd95-4f95-aab0-12a984287f95nsmf-event-exposure nsmf-event-exposure [{v1 https://smf.free5gc.org:8000/nsmf-pdusession/v1 2026-01-17 17:31:34.731065813 +0000 UTC}] https REGISTERED   [{smf.free5gc.org   8000}] http://smf.free5gc.org:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>} {1970942b-dd95-4f95-aab0-12a984287f95nsmf-oam nsmf-oam [{v1 https://smf.free5gc.org:8000/nsmf-pdusession/v1 2026-01-17 17:31:34.731065813 +0000 UTC}] https REGISTERED   [{smf.free5gc.org   8000}] http://smf.free5gc.org:8000 [] [] [] [] [] [] map[] map[] 0 0 0 <nil> <nil>  [] [] []  map[] false <nil>}] map[] false false [] <nil> <nil> [] [] false false map[] map[] [] <nil> <nil>  map[] map[] <nil> <nil> map[] <nil> map[] map[] map[] map[] <nil> <nil> [] <nil> <nil>}
+2026-01-17T17:31:34.974100702Z [INFO][SMF][SBI] Start SBI server (listen on smf.free5gc.org:8000)
+2026-01-17T17:31:34.983085692Z [INFO][SMF][PFCP] Listen on 10.100.200.5:8805
+2026-01-17T17:31:34.983595066Z [INFO][SMF][PFCP] Pfcp running... [2026-01-17 17:31:34.983573163 +0000 UTC m=+0.414332039]
+2026-01-17T17:31:35.996939677Z [INFO][SMF][Main] Sending PFCP Association Request to UPF[upf.free5gc.org](10.100.200.3)
+2026-01-17T17:31:36.013979479Z [INFO][SMF][Main] Received PFCP Association Setup Accepted Response from UPF[upf.free5gc.org](10.100.200.3)
+2026-01-17T17:31:36.024976278Z [INFO][SMF][Main] UPF(10.100.200.3) setup association
+2026-01-17T17:32:30.277085593Z [INFO][SMF][PduSess] Receive Create SM Context Request
+2026-01-17T17:32:30.286417033Z [INFO][SMF][PduSess] In HandlePDUSessionSMContextCreate
+2026-01-17T17:32:30.286795493Z [INFO][SMF][CTX] UrrPeriod: 10s
+2026-01-17T17:32:30.286806760Z [INFO][SMF][CTX] UrrThreshold: 1000
+2026-01-17T17:32:30.311533027Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] Send NF Discovery Serving UDM Successfully
+2026-01-17T17:32:30.376169952Z [INFO][SMF][GSM] In HandlePDUSessionEstablishmentRequest
+2026-01-17T17:32:30Z [INFO][NAS][Convert] ProtocolOrContainerList:  [0xc0000c1be0 0xc0000c1c00]
+2026-01-17T17:32:30.376298310Z [INFO][SMF][GSM] Protocol Configuration Options
+2026-01-17T17:32:30.376788317Z [INFO][SMF][GSM] &{[0xc0000c1be0 0xc0000c1c00]}
+2026-01-17T17:32:30.376803644Z [INFO][SMF][GSM] Didn't Implement container type IPAddressAllocationViaNASSignallingUL
+2026-01-17T17:32:30.399882936Z [INFO][SMF][Consumer] SendNFDiscoveryServingAMF ok
+2026-01-17T17:32:30.404135756Z [INFO][SMF][CTX] Allocated UE IP address: 10.60.0.1
+2026-01-17T17:32:30.406035703Z [INFO][SMF][CTX] Selected UPF: UPF
+2026-01-17T17:32:30.406142630Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] Allocated PDUAdress[10.60.0.1]
+2026-01-17T17:32:30.591263605Z [INFO][SMF][PduSess] CHF Selection for SMContext SUPI[imsi-208930000000001] PDUSessionID[1]
+2026-01-17T17:32:30.610059299Z [INFO][SMF][Charging] Handle SendConvergedChargingRequest
+2026-01-17T17:32:30.659966874Z [INFO][SMF][Charging] Send Charging Data Request[Init] successfully
+2026-01-17T17:32:30.679865707Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] Install PCCRule[PccRuleId-1]
+2026-01-17T17:32:30.679890727Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] No srcTcData and tgtTcData. Nothing to do
+2026-01-17T17:32:30.698202870Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] Install PCCRule[PccRuleId-2]
+2026-01-17T17:32:30.698329785Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] No srcTcData and tgtTcData. Nothing to do
+2026-01-17T17:32:30.698831190Z [INFO][SMF][PduSess][pdu_session_id:1][supi:imsi-208930000000001] Has default path
+2026-01-17T17:32:30.703218516Z [INFO][SMF][PduSess] Sending PFCP Session Establishment Request
+2026-01-17T17:32:30.736122672Z [INFO][SMF][PduSess] Received PFCP Session Establishment Accepted Response
+2026-01-17T17:32:31.761772038Z [INFO][SMF][PduSess] SDM Subscription Successful UE: imsi-208930000000001 SubscriptionId: 2
+2026-01-17T17:32:31.764217124Z [INFO][SMF][GIN] | 201 |   10.100.200.16 | POST    | /nsmf-pdusession/v1/sm-contexts |  |
+2026-01-17T17:32:31.878071330Z [INFO][SMF][PduSess] Receive Create SM Context Request
+2026-01-17T17:32:31.878812431Z [INFO][SMF][PduSess] In HandlePDUSessionSMContextCreate
+2026-01-17T17:32:31.878968646Z [INFO][SMF][CTX] UrrPeriod: 10s
+2026-01-17T17:32:31.878984976Z [INFO][SMF][CTX] UrrThreshold: 1000
+2026-01-17T17:32:31.902770270Z [INFO][SMF][PduSess][pdu_session_id:2][supi:imsi-208930000000001] Send NF Discovery Serving UDM Successfully
+2026-01-17T17:32:31.963415092Z [INFO][SMF][GSM] In HandlePDUSessionEstablishmentRequest
+2026-01-17T17:32:31Z [INFO][NAS][Convert] ProtocolOrContainerList:  [0xc00028a240 0xc00028a260]
+2026-01-17T17:32:31.964546811Z [INFO][SMF][GSM] Protocol Configuration Options
+2026-01-17T17:32:31.964570518Z [INFO][SMF][GSM] &{[0xc00028a240 0xc00028a260]}
+2026-01-17T17:32:31.964581805Z [INFO][SMF][GSM] Didn't Implement container type IPAddressAllocationViaNASSignallingUL
+2026-01-17T17:32:31.999380850Z [INFO][SMF][Consumer] SendNFDiscoveryServingAMF ok
+2026-01-17T17:32:32.002103853Z [INFO][SMF][CTX] Allocated UE IP address: 10.61.0.1
+2026-01-17T17:32:32.004009307Z [INFO][SMF][CTX] Selected UPF: UPF
+2026-01-17T17:32:32.004130198Z [INFO][SMF][PduSess][pdu_session_id:2][supi:imsi-208930000000001] Allocated PDUAdress[10.61.0.1]
+2026-01-17T17:32:32.173354123Z [INFO][SMF][PduSess] CHF Selection for SMContext SUPI[imsi-208930000000001] PDUSessionID[2]
+2026-01-17T17:32:32.194926335Z [INFO][SMF][Charging] Handle SendConvergedChargingRequest
+2026-01-17T17:32:32.221350887Z [INFO][SMF][Charging] Send Charging Data Request[Init] successfully
+2026-01-17T17:32:32.240182213Z [INFO][SMF][PduSess][pdu_session_id:2][supi:imsi-208930000000001] Install PCCRule[PccRuleId-1]
+2026-01-17T17:32:32.240701951Z [INFO][SMF][PduSess][pdu_session_id:2][supi:imsi-208930000000001] No srcTcData and tgtTcData. Nothing to do
+2026-01-17T17:32:32.260208565Z [INFO][SMF][PduSess][pdu_session_id:2][supi:imsi-208930000000001] Install PCCRule[PccRuleId-2]
+2026-01-17T17:32:32.260330037Z [INFO][SMF][PduSess][pdu_session_id:2][supi:imsi-208930000000001] No srcTcData and tgtTcData. Nothing to do
+2026-01-17T17:32:32.260426459Z [INFO][SMF][PduSess][pdu_session_id:2][supi:imsi-208930000000001] Has default path
+2026-01-17T17:32:32.260486974Z [INFO][SMF][GIN] | 201 |   10.100.200.16 | POST    | /nsmf-pdusession/v1/sm-contexts |  |
+2026-01-17T17:32:32.265616689Z [INFO][SMF][PduSess] Sending PFCP Session Establishment Request
+2026-01-17T17:32:32.304222036Z [INFO][SMF][PduSess] Received PFCP Session Establishment Accepted Response
+2026-01-17T17:32:32.305052011Z [INFO][SMF][PduSess] Receive Update SM Context Request
+2026-01-17T17:32:32.324099692Z [INFO][SMF][PduSess] Received PFCP Session Modification Accepted Response from AN UPF
+2026-01-17T17:32:32.325182614Z [INFO][SMF][GIN] | 200 |   10.100.200.16 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:4f98cb1d-f9b6-44d2-b4fa-2404ac9aa393/modify |  |
+2026-01-17T17:32:32.381648144Z [INFO][SMF][PduSess] Receive Update SM Context Request
+2026-01-17T17:32:32.399684283Z [INFO][SMF][PduSess] Received PFCP Session Modification Accepted Response from AN UPF
+2026-01-17T17:32:32.399769037Z [INFO][SMF][GIN] | 200 |   10.100.200.16 | POST    | /nsmf-pdusession/v1/sm-contexts/urn:uuid:656d656d-522d-4382-bac4-643790d2ac0a/modify |  |
+2026-01-17T17:32:40.734279722Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-01-17T17:32:40.734475252Z [INFO][SMF][Charging] No report need to be charged
+2026-01-17T17:32:40.738185147Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-01-17T17:32:40.739166560Z [INFO][SMF][Charging] No report need to be charged
+2026-01-17T17:32:50.735582597Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-01-17T17:32:50.735621792Z [INFO][SMF][Charging] No report need to be charged
+2026-01-17T17:32:50.739374800Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-01-17T17:32:50.739742423Z [INFO][SMF][Charging] No report need to be charged
+2026-01-17T17:33:00.738451107Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-01-17T17:33:00.738767708Z [INFO][SMF][Charging] No report need to be charged
+2026-01-17T17:33:00.741971116Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-01-17T17:33:00.742083145Z [INFO][SMF][Charging] No report need to be charged
+2026-01-17T17:33:10.733271367Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-01-17T17:33:10.733544925Z [INFO][SMF][Charging] No report need to be charged
+2026-01-17T17:33:10.734059126Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-01-17T17:33:10.734286723Z [INFO][SMF][Charging] No report need to be charged
+2026-01-17T17:33:20.738914531Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-01-17T17:33:20.738966526Z [INFO][SMF][Charging] No report need to be charged
+2026-01-17T17:33:20.740209072Z [INFO][SMF][Charging] build MultiUnitUsageFromUsageReport
+2026-01-17T17:33:20.740958082Z [INFO][SMF][Charging] No report need to be charged
