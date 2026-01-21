@@ -1,0 +1,31 @@
+@startuml
+!include ./puml-theme-bluegray.puml
+
+
+
+title 全体ログ
+
+box UERANSIM
+participant "UERANSIM" as RAN
+end box
+
+box free5gc
+participant "AMF" as AMF
+
+end box
+
+autonumber
+
+RAN ->  AMF : NG Setup Request
+AMF --> RAN : NG Setup Response
+RAN ->  AMF : Initial UE Message
+RAN ->  AMF : Registration Request
+AMF ->  RAN : Downlink NAS Transport\n(Authentication Request)
+RAN --> AMF : Uplink NAS Transport\n(Authentication Response)
+
+
+== メイン処理 ==
+
+
+
+@enduml
